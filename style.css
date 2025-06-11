@@ -1,0 +1,153 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 10px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    background-color: white;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #e8f4fc;
+}
+
+.action-btn {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+}
+
+.edit-btn:hover {
+    background-color: #e67e22;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    input {
+        min-width: 100%;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
